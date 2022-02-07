@@ -1,0 +1,1 @@
+For all self extracting archives, please download all the files and run the .exe.
