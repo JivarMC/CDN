@@ -9,7 +9,11 @@
 	</head>
 	<body>
 		<h1>404: Resource Not Found</h1>
-		<p>The requested resource could not be found.</p>
+		<p id="loc"></p>
+		<script>
+  			const locationVar = document.getElementById("loc");
+  			locationVar.innerText = `The requested resource ${window.location.pathname} could not be found.`; 
+		</script>
 		<p>This could be because:</p>
 		<ul>
 			<li>The item has moved or been renamed.</li>
