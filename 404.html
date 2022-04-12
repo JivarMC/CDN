@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>404: Not Found | cdn.jivarr.ir</title>
+		<title id="hostname"></title>
 		<style>
 			body { font-family: Segoe UI, sans-serif; }
 			a { text-decoration: none; color: inherit; }
@@ -12,7 +12,9 @@
 		<p id="loc"></p>
 		<script>
   			const locationVar = document.getElementById("loc");
-  			locationVar.innerText = `The requested resource ${window.location.pathname} could not be found.`; 
+  			locationVar.innerText = `The requested resource ${window.location.pathname} could not be found.`;
+  			const hostnameVar = document.getElementById("hostname");
+  			hostnameVar.innerText = `404: Not Found | ${window.location.hostname}`;
 		</script>
 		<p>This could be because:</p>
 		<ul>
